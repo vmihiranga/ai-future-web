@@ -1,0 +1,1501 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AI Future | Transforming Tomorrow Through Intelligence</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%2300EDEE'/><circle cx='35' cy='35' r='5' fill='%23fff'/><circle cx='65' cy='35' r='5' fill='%23fff'/><path d='M30 60 Q50 80 70 60' stroke='%23fff' stroke-width='3' fill='none'/></svg>"
+        />
+
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="ai-studio.css" />
+    </head>
+    <body>
+
+        <div id="loading-screen" class="loading-screen">
+            <div class="loading-content">
+                <div class="loading-logo">
+                    <div class="logo-glow">AI</div>
+                </div>
+                <div class="loading-bar">
+                    <div class="loading-progress"></div>
+                </div>
+                <div class="loading-text">Initializing Neural Networks...</div>
+            </div>
+        </div>
+
+   
+        <canvas id="bg-canvas"></canvas>
+
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <div class="logo-3d">
+                        <span class="logo-text">AI Future</span>
+                        <div class="logo-particles"></div>
+                    </div>
+                </div>
+
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#news" class="nav-link">News</a></li>
+                    <li><a href="#showcase" class="nav-link">Showcase</a></li>
+                    <li><a href="#chat" class="nav-link">AI Studio</a></li>
+                    <li><a href="#legal" class="nav-link">Legal</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-controls">
+                    <button
+                        id="theme-toggle"
+                        class="theme-toggle"
+                        aria-label="Toggle theme"
+                    >
+                        <div class="theme-icon sun">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="theme-icon moon">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </button>
+
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+ 
+        <section id="hero" class="hero">
+            <div class="hero-particles" id="hero-particles"></div>
+            <div class="floating-elements">
+                <div class="floating-cube cube-1"></div>
+                <div class="floating-cube cube-2"></div>
+                <div class="floating-cube cube-3"></div>
+                <div class="floating-sphere sphere-1"></div>
+                <div class="floating-sphere sphere-2"></div>
+            </div>
+
+            <div class="hero-content">
+                <br /><br /><br /><br />
+                <div class="hero-badge animate-fade-in">
+                    <i class="fas fa-rocket"></i>
+                    <span>AI-Powered Future</span>
+                    <div class="badge-glow"></div>
+                </div>
+
+                <h1 class="hero-title">
+                    <div class="title-line">
+                        <span id="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <div class="title-subtitle">
+                        <span class="gradient-text">Transforming Tomorrow</span>
+                    </div>
+                </h1>
+
+                <p class="hero-description animate-fade-in-delay">
+                    Harnessing artificial intelligence to drive innovation
+                    across industries, from healthcare to finance, with advanced
+                    neural networks and machine learning solutions. Join us in
+                    shaping a smarter, more connected world.
+                </p>
+                 <div class="hero-buttons animate-fade-in-delay-2">
+                    <a
+                        href="#showcase"
+                        class="btn btn-primary"
+                        data-text="Explore AI"
+                    >
+                        <i class="fas fa-brain"></i>
+                        <span>Explore AI</span>
+                        <div class="btn-particles"></div>
+                    </a>
+                    <button class="btn btn-secondary" onclick="scrollToChat()">
+                        <i class="fas fa-comments"></i>
+                        <span>Try AI Chat</span>
+                    </button>
+                </div>
+                <div class="hero-stats animate-fade-in-delay-3">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="650">0</div>
+                        <div class="stat-label">AI Models Deployed</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="2700000">0</div>
+                        <div class="stat-label">Global Users</div>
+                    </div>
+
+                </div>
+               <br>
+                    <br>
+                    <br>
+                    <br>
+            </div>
+        </section>
+
+<section id="about" class="about section-padding">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">Understanding</div>
+            <h2 class="section-title fade-in">The Power of AI</h2>
+            <p class="section-subtitle fade-in">
+                Learn how artificial intelligence is reshaping industries with cutting-edge technologies and innovative solutions that are transforming the way we live and work.
+            </p>
+        </div>
+
+
+        <div class="about-grid">
+            <div class="about-text fade-in">
+                <h3 class="gradient-text">
+                    Why AI is Transforming the World
+                </h3>
+                <p>
+                    Artificial Intelligence (AI) is revolutionizing industries by enabling machines to learn, reason,
+                    and make decisions. According to McKinsey, AI could contribute up to $15.7 trillion to the global
+                    economy by 2030. From diagnosing diseases in healthcare to optimizing supply chains in logistics, 
+                    AI's applications are vast and transformative.
+                </p>
+                <p>
+                    The current AI revolution is driven by three key factors: exponential growth in computing power, 
+                    vast amounts of available data, and breakthrough algorithms like deep learning and transformers. 
+                    Organizations worldwide are adopting AI to enhance productivity, reduce costs, and create new 
+                    business models that were previously impossible.
+                </p>
+
+
+                <div class="ai-statistics">
+                    <div class="stat-highlight">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="stat-content">
+                            <span class="stat-number">300%</span>
+                            <span class="stat-label">AI Investment Growth (2020-2024)</span>
+                        </div>
+                    </div>
+                    <div class="stat-highlight">
+                        <i class="fas fa-industry"></i>
+                        <div class="stat-content">
+                            <span class="stat-number">85%</span>
+                            <span class="stat-label">of Companies Using AI by 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+         
+                <div class="ai-applications">
+                    <h4>Real-World AI Applications</h4>
+                    <div class="application-list">
+                        <div class="application-item">
+                            <i class="fas fa-user-md"></i>
+                            <div class="application-content">
+                                <h5>Healthcare Revolution</h5>
+                                <p>AI assists in early disease detection, drug discovery, and personalized treatment plans, potentially saving millions of lives annually.</p>
+                            </div>
+                        </div>
+                        <div class="application-item">
+                            <i class="fas fa-car"></i>
+                            <div class="application-content">
+                                <h5>Autonomous Transportation</h5>
+                                <p>Self-driving vehicles promise to reduce traffic accidents by 90% and revolutionize urban mobility systems.</p>
+                            </div>
+                        </div>
+                        <div class="application-item">
+                            <i class="fas fa-leaf"></i>
+                            <div class="application-content">
+                                <h5>Climate Solutions</h5>
+                                <p>AI optimizes energy grids, predicts weather patterns, and helps develop sustainable technologies for environmental protection.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Deep Learning</h4>
+                            <p>
+                                Neural networks that power applications like image recognition and natural
+                                language processing, inspired by the human brain structure.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-crystal-ball"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Predictive Analytics</h4>
+                            <p>
+                                AI-driven insights to forecast trends, such as demand forecasting in retail or
+                                risk assessment in financial markets.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Automation</h4>
+                            <p>
+                                Streamlining repetitive tasks through robotic process automation, 
+                                boosting efficiency by up to 40% in manufacturing.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Innovation</h4>
+                            <p>
+                                Driving breakthroughs in drug discovery, materials science, and creative
+                                industries, accelerating human progress.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gif-column fade-in">
+                <div class="gif-container">
+                    <div class="gif-header">
+                        <h4>AI in Motion</h4>
+                        <p>Watch artificial intelligence concepts come to life through interactive visualizations and real-world demonstrations.</p>
+                    </div>
+                    
+
+                    <div class="gif-showcase">
+                        <div class="gif-wrapper main-gif">
+                            <img 
+                                src="https://media.giphy.com/media/3o7qDSOvfaCO9b3MlO/giphy.gif"
+                                alt="Neural Network Visualization"
+                                loading="lazy"
+                            />
+                            <div class="gif-overlay">
+                                <div class="gif-info">
+                                    <h5>Neural Network Learning</h5>
+                                    <p>Watch AI neurons process and learn from data patterns</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+     
+                    <div class="gif-grid">
+                        <div class="gif-item">
+                            <img 
+                                src="https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif"
+                                alt="AI Robot Processing"
+                                loading="lazy"
+                            />
+                            <div class="gif-caption">AI Robot Processing</div>
+                        </div>
+                        <div class="gif-item">
+                            <img 
+                                src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif"
+                                alt="Machine Learning Algorithm"
+                                loading="lazy"
+                            />
+                            <div class="gif-caption">ML Algorithm Training</div>
+                        </div>
+                        <div class="gif-item">
+                            <img 
+                                src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif"
+                                alt="Data Analysis"
+                                loading="lazy"
+                            />
+                            <div class="gif-caption">Data Analysis Flow</div>
+                        </div>
+                        <div class="gif-item">
+                            <img 
+                                src="https://media.giphy.com/media/l46CDHTqbmnGZyxKo/giphy.gif"
+                                alt="AI Thinking Process"
+                                loading="lazy"
+                            />
+                            <div class="gif-caption">AI Decision Making</div>
+                        </div>
+                    </div>
+   
+                    <div class="gif-controls">
+                        <button class="gif-btn active" data-gif="neural">Neural Networks</button>
+                        <button class="gif-btn" data-gif="vision">Computer Vision</button>
+                        <button class="gif-btn" data-gif="nlp">Natural Language</button>
+                    </div>
+                </div>
+
+
+                <div class="ai-facts">
+                    <h4>AI by the Numbers</h4>
+                    <div class="fact-item">
+                        <div class="fact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="fact-content">
+                            <span class="fact-number">4.6 billion</span>
+                            <span class="fact-label">People interact with AI daily</span>
+                        </div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="fact-content">
+                            <span class="fact-number">2.5 hours</span>
+                            <span class="fact-label">Average time saved per worker daily</span>
+                        </div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="fact-content">
+                            <span class="fact-number">175+</span>
+                            <span class="fact-label">Programming languages supported by AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     
+        <div class="ai-impact-timeline fade-in">
+            <h3 class="timeline-title">AI Evolution Journey</h3>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-year">1950s</div>
+                    <div class="timeline-content">
+                        <h5>Foundation Era</h5>
+                        <p>Alan Turing proposes the "Turing Test" and lays the groundwork for machine intelligence.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1980s</div>
+                    <div class="timeline-content">
+                        <h5>Expert Systems</h5>
+                        <p>First commercial AI applications emerge in healthcare and finance sectors.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2010s</div>
+                    <div class="timeline-content">
+                        <h5>Deep Learning Revolution</h5>
+                        <p>Breakthrough in neural networks enables image recognition and natural language processing.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2020s</div>
+                    <div class="timeline-content">
+                        <h5>Generative AI Era</h5>
+                        <p>Large language models and generative AI transform content creation and human-computer interaction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+        <section id="news" class="news section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Updates</div>
+                    <h2 class="section-title fade-in">Latest AI News</h2>
+                    <p class="section-subtitle fade-in">
+                        Stay informed about the most recent breakthroughs and
+                        developments in artificial intelligence as of September
+                        2025.
+                    </p>
+                </div>
+
+                <div class="news-grid">
+                    <div class="news-card fade-in">
+                        <div class="card-glow"></div>
+                        <div class="card-icon">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <h3>
+                            New Generative AI Approach for Chemical Reactions
+                        </h3>
+                        <p>
+                            MIT researchers developed a generative AI model that
+                            predicts chemical reactions with high accuracy,
+                            advancing drug discovery and materials science.
+                        </p>
+                        <div class="news-details">
+                            <span class="news-date">September 3, 2025</span>
+                            <a
+                                href="https://news.mit.edu/2025/new-generative-ai-approach-accurately-predicts-chemical-reactions-0903"
+                                class="news-link read-more-btn"
+                                target="_blank"
+                                >Read More</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="news-card fade-in">
+                        <div class="card-glow"></div>
+                        <div class="card-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Generative AI in Collaborative Robotics</h3>
+                        <p>
+                            Experts forecast that generative AI will enhance
+                            collaborative robotics, enabling intuitive
+                            human-robot interactions for industrial automation.
+                        </p>
+                        <div class="news-details">
+                            <span class="news-date">September 19, 2025</span>
+                            <a
+                                href="https://news.mit.edu/2025/what-does-future-hold-generative-ai-0919"
+                                class="news-link read-more-btn"
+                                target="_blank"
+                                >Read More</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="news-card fade-in">
+                        <div class="card-glow"></div>
+                        <div class="card-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI Breakthroughs: September 2025 Roundup</h3>
+                        <p>
+                            Key advancements in multimodal AI, AI chips, and
+                            ethical policies from OpenAI, Google DeepMind, and
+                            others.
+                        </p>
+                        <div class="news-details">
+                            <span class="news-date">September 20, 2025</span>
+                            <a
+                                href="https://binaryverseai.com/ai-news-september-20-2025/"
+                                class="news-link read-more-btn"
+                                target="_blank"
+                                >Read More</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="news-card fade-in">
+                        <div class="card-glow"></div>
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Quantum AI Integration Advances</h3>
+                        <p>
+                            New developments in quantum AI for healthcare
+                            applications, alongside updated AI regulations.
+                        </p>
+                        <div class="news-details">
+                            <span class="news-date">September 14, 2025</span>
+                            <a
+                                href="https://champaignmagazine.com/2025/09/14/ai-by-ai-weekly-top-5-september-8-14-2025/"
+                                class="news-link read-more-btn"
+                                target="_blank"
+                                >Read More</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="news-card fade-in">
+                        <div class="card-glow"></div>
+                        <div class="card-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>AI for Climate Prediction</h3>
+                        <p>
+                            New AI models improve climate forecasting accuracy,
+                            aiding global sustainability efforts.
+                        </p>
+                        <div class="news-details">
+                            <span class="news-date">September 18, 2025</span>
+                            <a
+                                href="https://theaitrack.com/ai-news-september-2025-in-depth-and-concise/"
+                                class="news-link read-more-btn"
+                                target="_blank"
+                                >Read More</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="news-card fade-in">
+                        <div class="card-glow"></div>
+                        <div class="card-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Physical AI in Industrial Operations</h3>
+                        <p>
+                            The World Economic Forum highlights physical AI's
+                            role in robotics and workforce transformation.
+                        </p>
+                        <div class="news-details">
+                            <span class="news-date">September 2025</span>
+                            <a
+                                href="https://www.weforum.org/publications/physical-ai-powering-the-new-age-of-industrial-operations/"
+                                class="news-link read-more-btn"
+                                target="_blank"
+                                >Read More</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     
+        <section id="showcase" class="showcase section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Innovations</div>
+                    <h2 class="section-title fade-in">Real-World AI Models</h2>
+                    <p class="section-subtitle fade-in">
+                        Discover cutting-edge AI models transforming industries
+                        from healthcare to entertainment.
+                    </p>
+                </div>
+
+                <div class="showcase-grid">
+                    <div class="showcase-card fade-in" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="card-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Grok: Truth-Seeking AI</h3>
+                        <p>
+                            Developed by xAI, Grok is a conversational AI
+                            designed to provide truthful, insightful answers,
+                            assisting users in understanding complex topics.
+                        </p>
+                        <div class="tech-tags">
+                            <span>NLP</span>
+                            <span>Large Language Models</span>
+                            <span>Conversational AI</span>
+                        </div>
+                        <a class="demo-btn" href="https://x.ai/grok" target="_blank" rel="noopener">
+                            Learn More
+                        </a>
+                    </div>
+
+                    <div class="showcase-card fade-in" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="card-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <h3>DALL·E 3: Image Generation</h3>
+                        <p>
+                            OpenAI's DALL·E 3 generates high-quality images from
+                            text prompts, powering creative applications in
+                            design, advertising, and art.
+                        </p>
+                        <div class="tech-tags">
+                            <span>Generative AI</span>
+                            <span>Diffusion Models</span>
+                            <span>Text-to-Image</span>
+                        </div>
+                        <a class="demo-btn" href="https://openai.com/research/dall-e-3" target="_blank" rel="noopener">
+                            Explore
+                        </a>
+                    </div>
+
+                    <div class="showcase-card fade-in" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="card-icon"><i class="fas fa-dna"></i></div>
+                        <h3>AlphaFold: Protein Folding</h3>
+                        <p>
+                            DeepMind's AlphaFold solves protein folding,
+                            accelerating drug discovery by predicting protein
+                            structures with unprecedented accuracy.
+                        </p>
+                        <div class="tech-tags">
+                            <span>Bioinformatics</span>
+                            <span>Deep Learning</span>
+                            <span>Protein Folding</span>
+                        </div>
+                        <a class="demo-btn" href="https://www.deepmind.com/research/highlighted-research/alphafold" target="_blank" rel="noopener">
+                            Learn More
+                        </a>
+                    </div>
+
+                    <div class="showcase-card fade-in" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="card-icon"><i class="fas fa-car"></i></div>
+                        <h3>Tesla FSD: Autonomous Driving</h3>
+                        <p>
+                            Tesla's Full Self-Driving uses convolutional neural
+                            networks to process visual data, enabling safer and
+                            more reliable autonomous vehicles.
+                        </p>
+                        <div class="tech-tags">
+                            <span>CNN</span>
+                            <span>Object Detection</span>
+                            <span>Autonomous Systems</span>
+                        </div>
+                        <a class="demo-btn" href="https://www.tesla.com/AI" target="_blank" rel="noopener">
+                            Discover
+                        </a>
+                    </div>
+
+                    <div class="showcase-card fade-in" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="card-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>BERT: Language Understanding</h3>
+                        <p>
+                            Google's BERT powers search engines and NLP
+                            applications, improving query understanding and
+                            language processing for over 1 billion users.
+                        </p>
+                        <div class="tech-tags">
+                            <span>NLP</span>
+                            <span>Transformers</span>
+                            <span>Search Optimization</span>
+                        </div>
+                        <a class="demo-btn" href="https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html" target="_blank" rel="noopener">
+                            Learn More
+                        </a>
+                    </div>
+
+                    <div class="showcase-card fade-in" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="card-icon">
+                            <i class="fas fa-chess"></i>
+                        </div>
+                        <h3>MuZero: Reinforcement Learning</h3>
+                        <p>
+                            DeepMind's MuZero masters complex games and
+                            decision-making tasks, with applications in robotics
+                            and optimization.
+                        </p>
+                        <div class="tech-tags">
+                            <span>Reinforcement Learning</span>
+                            <span>Game AI</span>
+                            <span>Decision Systems</span>
+                        </div>
+                        <a class="demo-btn" href="https://www.deepmind.com/research/highlighted-research/muzero" target="_blank" rel="noopener">
+                            Explore
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<section id="chat" class="chat-section section-padding">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">AI Studio</div>
+            <h2 class="section-title fade-in">AI Creative Studio</h2>
+            <p class="section-subtitle fade-in">
+                Experience our enhanced AI studio with intelligent conversations, image generation, and artistic creation tools.
+            </p>
+        </div>
+
+      
+        <div class="ai-tool-content active" id="chat-tab">
+            <div class="chat-container fade-in">
+                <div class="chat-header">
+                    <div class="chat-status">
+                        <div class="status-indicator online"></div>
+                        <i class="fas fa-robot"></i>
+                        <span>AI Assistant Online</span>
+                    </div>
+                    <button class="clear-chat" onclick="clearChat()">
+                        <i class="fas fa-trash"></i>
+                        Clear Chat
+                    </button>
+                </div>
+
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message bot-message">
+                        <div class="message-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="message-content">
+                            <p>
+                                Hi! I'm your AI assistant powered by advanced language models. I can help you with questions about AI, technology, science, and various other topics. I can also help you brainstorm ideas for images you might want to generate using our AI tools!
+                            </p>
+                            <div class="message-time">Just now</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="typing-indicator" id="typing-indicator">
+                    <div class="typing-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>AI is thinking...</span>
+                </div>
+
+                <div class="chat-input-container">
+                    <div class="input-wrapper">
+                        <input
+                            type="text"
+                            id="chat-input"
+                            placeholder="Ask about AI, request image ideas, or chat about anything..."
+                            autocomplete="off"
+                        />
+                        <button class="send-btn" disabled id="send-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+    </div>
+</section>
+
+<section id="fttimeline" class="fttimeline-section section-padding">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">Future Vision</div>
+            <h2 class="section-title fade-in">AI Evolution Timeline</h2>
+            <p class="section-subtitle fade-in">
+                Explore the transformative journey of artificial intelligence from today's innovations to tomorrow's revolutionary breakthroughs.
+            </p>
+        </div>
+
+        <div class="fttimeline-container">
+
+            <div class="fttimeline-line">
+                <div class="fttimeline-progress"></div>
+            </div>
+
+
+            <div class="fttimeline-item fade-in" data-year="2025">
+                <div class="fttimeline-dot">
+                    <div class="fttimeline-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C13.1 2 14 2.9 14 4V8.5C14 9.33 13.33 10 12.5 10H11.5C10.67 10 10 9.33 10 8.5V4C10 2.9 10.9 2 12 2M19 10V11.5C19 15.08 16.08 18 12.5 18S6 15.08 6 11.5V10H4V11.5C4 16.19 7.81 20 12.5 20V22H11V24H14V22H12.5C17.19 22 21 18.19 21 13.5V12H21V10H19Z"/>
+                        </svg>
+                    </div>
+                    <div class="dot-glow"></div>
+                </div>
+                <div class="fttimeline-content fttimeline-left">
+                    <div class="fttimeline-card">
+                        <div class="card-glow"></div>
+                        <div class="fttimeline-year">2025</div>
+                        <h3>AI Assistants Everywhere</h3>
+                        <p>
+                            AI-powered personal assistants become a part of daily life, handling scheduling, research, shopping, and even emotional support. Voice interfaces and chatbots are deeply integrated into homes, offices, and vehicles, making interactions seamless and context-aware.
+                        </p>
+                        <div class="fttimeline-tags">
+                            <span>Voice AI</span>
+                            <span>Smart Homes</span>
+                            <span>Context-Aware</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fttimeline-item fade-in" data-year="2030">
+                <div class="fttimeline-dot">
+                    <div class="fttimeline-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5H15V4C15 2.89 14.11 2 13 2H11C9.89 2 9 2.89 9 4V5H6.5C5.84 5 5.28 5.42 5.08 6.01L3 12V20C3 21.11 3.89 22 5 22H6C7.11 22 8 21.11 8 20V19H16V20C16 21.11 16.89 22 18 22H19C20.11 22 21 21.11 21 20V12L18.92 6.01M6.5 16C5.67 16 5 15.33 5 14.5S5.67 13 6.5 13 8 13.67 8 14.5 7.33 16 6.5 16M17.5 16C16.67 16 16 15.33 16 14.5S16.67 13 17.5 13 19 13.67 19 14.5 18.33 16 17.5 16M5 11L6.5 7H17.5L19 11H5Z"/>
+                            <circle cx="12" cy="8" r="1.5" fill="currentColor"/>
+                            <path d="M12 4.5C12.83 4.5 13.5 5.17 13.5 6S12.83 7.5 12 7.5 10.5 6.83 10.5 6 11.17 4.5 12 4.5Z"/>
+                        </svg>
+                    </div>
+                    <div class="dot-glow"></div>
+                </div>
+                <div class="fttimeline-content fttimeline-right">
+                    <div class="fttimeline-card">
+                        <div class="card-glow"></div>
+                        <div class="fttimeline-year">2030</div>
+                        <h3>Fully Autonomous Transport</h3>
+                        <p>
+                            Self-driving cars, drones, and delivery robots dominate roads and skies. Cities adapt with smart infrastructure to coordinate fleets, reduce traffic, and cut emissions. Human intervention is rare — transport is safer, greener, and always on time.
+                        </p>
+                        <div class="fttimeline-tags">
+                            <span>Autonomous Vehicles</span>
+                            <span>Smart Cities</span>
+                            <span>Green Transport</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fttimeline-item fade-in" data-year="2040">
+                <div class="fttimeline-dot">
+                    <div class="fttimeline-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C13.5 2 16.38 2.5 19 5.5C21.92 8.93 22 15.68 22 16V18C22 19.1 21.1 20 20 20H19C18.45 20 18 19.55 18 19S18.45 18 19 18H20V16C20 15.54 19.94 9.77 17.5 6.75C15.87 4.78 13.87 4 12 4S8.13 4.78 6.5 6.75C4.06 9.77 4 15.54 4 16V18H5C5.55 18 6 18.45 6 19S5.55 20 5 20H4C2.9 20 2 19.1 2 18V16C2 15.68 2.08 8.93 5 5.5C7.62 2.5 10.5 2 12 2Z"/>
+                            <circle cx="8.5" cy="10.5" r="2" fill="currentColor"/>
+                            <circle cx="15.5" cy="10.5" r="2" fill="currentColor"/>
+                            <path d="M12 14C10.34 14 9 15.34 9 17C9 18.66 10.34 20 12 20S15 18.66 15 17C15 15.34 13.66 14 12 14M12 18C11.45 18 11 17.55 11 17S11.45 16 12 16 13 16.45 13 17 12.55 18 12 18Z"/>
+                            <path d="M9.5 7L10.5 8L9.5 9L8.5 8L9.5 7Z" fill="currentColor"/>
+                            <path d="M14.5 7L15.5 8L14.5 9L13.5 8L14.5 7Z" fill="currentColor"/>
+                            <circle cx="6" cy="6" r="0.5" fill="currentColor" opacity="0.7"/>
+                            <circle cx="18" cy="6" r="0.5" fill="currentColor" opacity="0.7"/>
+                            <circle cx="6" cy="18" r="0.5" fill="currentColor" opacity="0.7"/>
+                            <circle cx="18" cy="18" r="0.5" fill="currentColor" opacity="0.7"/>
+                        </svg>
+                    </div>
+                    <div class="dot-glow"></div>
+                </div>
+                <div class="fttimeline-content fttimeline-left">
+                    <div class="fttimeline-card">
+                        <div class="card-glow"></div>
+                        <div class="fttimeline-year">2040</div>
+                        <h3>Human–AI Symbiosis</h3>
+                        <p>
+                            Advanced neural interfaces enable direct communication between humans and AI. People can share thoughts with intelligent systems, augmenting memory, creativity, and problem-solving. Society embraces ethical frameworks to guide collaboration between biological and digital minds.
+                        </p>
+                        <div class="fttimeline-tags">
+                            <span>Neural Interface</span>
+                            <span>Mind-AI Link</span>
+                            <span>Ethical AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fttimeline-stats fade-in">
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M2.81 14.12L5.64 11.29C8.34 10.67 11.7 10.43 15.4 10.79C19.91 11.22 21.94 13.5 22 18.5L20 18.47C19.96 14.23 18.5 13.24 15.54 12.92C12.04 12.56 9.05 12.8 6.81 13.32L7.71 14.22C7.92 14.43 7.92 14.78 7.71 14.99C7.61 15.09 7.47 15.14 7.33 15.14S7.05 15.09 6.95 14.99L4.95 12.99C4.85 12.89 4.8 12.75 4.8 12.61S4.85 12.33 4.95 12.23L6.95 10.23C7.16 10.02 7.51 10.02 7.72 10.23C7.93 10.44 7.93 10.79 7.72 11L6.47 12.25C8.23 11.94 10.2 11.81 12.3 11.9L2.81 14.12Z"/>
+                        <path d="M13.54 2.57L12.41 1.44C12.2 1.23 11.85 1.23 11.64 1.44L9.64 3.44C9.54 3.54 9.49 3.68 9.49 3.82S9.54 4.1 9.64 4.2L11.64 6.2C11.74 6.3 11.88 6.35 12.02 6.35S12.3 6.3 12.4 6.2C12.61 5.99 12.61 5.64 12.4 5.43L11.15 4.18C12.91 3.87 14.88 3.74 16.98 3.83L16.08 4.73C15.87 4.94 15.87 5.29 16.08 5.5C16.18 5.6 16.32 5.65 16.46 5.65S16.74 5.6 16.84 5.5L18.84 3.5C18.94 3.4 18.99 3.26 18.99 3.12S18.94 2.84 18.84 2.74L16.84 0.74C16.63 0.53 16.28 0.53 16.07 0.74C15.86 0.95 15.86 1.3 16.07 1.51L17.32 2.76C15.56 2.45 13.59 2.32 11.49 2.41L13.54 2.57Z"/>
+                        <path d="M18.5 8.5L17 10L18.5 11.5L20 10L18.5 8.5Z"/>
+                        <path d="M5.5 12.5L4 14L5.5 15.5L7 14L5.5 12.5Z"/>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <div class="stat-number" data-count="85">0</div>
+                    <div class="stat-label">Innovation Rate (%)</div>
+                </div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2M11 19.93C7.05 19.44 4 16.08 4 12C4 11.64 4.05 11.29 4.09 10.95L7.5 14.36V15.5C7.5 16.33 8.17 17 9 17H10V19.93H11M19.5 16C19.5 16.83 18.83 17.5 18 17.5H16.5V15.5C16.5 14.67 15.83 14 15 14H9V12H10.5C11.33 12 12 11.33 12 10.5V9H15C15.83 9 16.5 8.33 16.5 7.5V6.7C18.4 8.14 19.5 10.13 19.5 12.36V16Z"/>
+                        <circle cx="8" cy="8" r="1" fill="currentColor" opacity="0.8"/>
+                        <circle cx="16" cy="8" r="1" fill="currentColor" opacity="0.8"/>
+                        <circle cx="12" cy="16" r="1" fill="currentColor" opacity="0.8"/>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <div class="stat-number" data-count="12">0</div>
+                    <div class="stat-label">Billion Devices Connected</div>
+                </div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16 6L18.29 8.29L13.41 13.17L9.41 9.17L2 16.59L3.41 18L9.41 12L13.41 16L19.71 9.71L22 12V6H16Z"/>
+                        <circle cx="5" cy="19" r="1.5" fill="currentColor" opacity="0.6"/>
+                        <circle cx="12" cy="12" r="1.5" fill="currentColor" opacity="0.6"/>
+                        <circle cx="19" cy="5" r="1.5" fill="currentColor" opacity="0.6"/>
+                        <path d="M2 20H22V21H2V20Z" opacity="0.4"/>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <div class="stat-number" data-count="400">0</div>
+                    <div class="stat-label">Trillion AI Market ($)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="how-it-works section-padding">
+    <div class="container">
+
+        <div class="section-header fade-in">
+            <div class="section-badge">
+                <i class="fas fa-cogs"></i>
+                How It Works
+            </div>
+            <h2 class="section-title">From Raw Data to Real Impact</h2>
+            <p class="section-subtitle">
+                Discover the four-stage journey of AI transformation that powers tomorrow's innovations
+            </p>
+        </div>
+
+
+        <div class="process-flow">
+
+            <div class="flow-connections">
+                <div class="flow-line flow-line-1"></div>
+                <div class="flow-line flow-line-2"></div>
+                <div class="flow-line flow-line-3"></div>
+            </div>
+
+
+            <div class="process-step" data-step="1">
+                <div class="step-node">
+                    <div class="node-glow"></div>
+                    <div class="step-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="step-number">01</div>
+                </div>
+                <div class="step-content">
+                    <h3>Data</h3>
+                    <p>AI systems start with massive amounts of information: images, text, audio, video, sensor streams, or numerical records.</p>
+                    <p>Good data quality and labeling are essential — they allow algorithms to "see" patterns and learn effectively.</p>
+                    <div class="step-stats">
+                        <div class="stat-item">
+                            <span class="stat-icon"><i class="fas fa-chart-line"></i></span>
+                            <span class="stat-text">Petabytes of Data</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-step" data-step="2">
+                <div class="step-node">
+                    <div class="node-glow"></div>
+                    <div class="step-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="step-number">02</div>
+                </div>
+                <div class="step-content">
+                    <h3>Algorithms</h3>
+                    <p>Machine learning models analyze data using mathematical formulas and optimization techniques.</p>
+
+                    <div class="tech-stack">
+                        <div class="tech-badge python">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                            <div class="tech-tooltip">The universal programming language for AI</div>
+                        </div>
+                        <div class="tech-badge tensorflow">
+                            <i class="fas fa-cube"></i>
+                            <span>TensorFlow</span>
+                            <div class="tech-tooltip">Google's open-source framework for building and training models</div>
+                        </div>
+                        <div class="tech-badge pytorch">
+                            <i class="fas fa-fire"></i>
+                            <span>PyTorch</span>
+                            <div class="tech-tooltip">A flexible research-to-production framework for deep learning</div>
+                        </div>
+                        <div class="tech-badge openai">
+                            <i class="fas fa-robot"></i>
+                            <span>OpenAI</span>
+                            <div class="tech-tooltip">Cutting-edge models (GPT, DALL·E) ready to integrate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-step" data-step="3">
+                <div class="step-node">
+                    <div class="node-glow"></div>
+                    <div class="step-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="step-number">03</div>
+                </div>
+                <div class="step-content">
+                    <h3>Intelligence</h3>
+                    <p>Trained models can now understand, predict, generate, or classify.</p>
+                    <br>
+                    <p>They turn algorithms into "intelligence" that solves tasks: recognizing images, translating text, generating music, or driving a car.</p>
+                    <div class="intelligence-capabilities">
+                        <span class="capability-tag">Computer Vision</span>
+                        <span class="capability-tag">Natural Language Processing</span>
+                        <span class="capability-tag">Predictive Analytics</span>
+                        <span class="capability-tag">Generative AI</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-step" data-step="4">
+                <div class="step-node">
+                    <div class="node-glow"></div>
+                    <div class="step-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="step-number">04</div>
+                </div>
+                <div class="step-content">
+                    <h3>Real-World Impact</h3>
+                    <p>AI powers smart assistants, healthcare diagnostics, autonomous vehicles, recommendation engines, creative tools, and climate simulations.</p>
+                    <p>Businesses and communities use these systems to make faster, safer, and more informed decisions.</p>
+                    <div class="impact-grid">
+                        <div class="impact-item">
+                            <i class="fas fa-stethoscope"></i>
+                            <span>Healthcare</span>
+                        </div>
+                        <div class="impact-item">
+                            <i class="fas fa-car"></i>
+                            <span>Autonomous Vehicles</span>
+                        </div>
+                        <div class="impact-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Creative Tools</span>
+                        </div>
+                        <div class="impact-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>Climate Solutions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     
+        <div class="data-flow-animation">
+            <div class="data-particle" data-from="1" data-to="2"></div>
+            <div class="data-particle" data-from="2" data-to="3"></div>
+            <div class="data-particle" data-from="3" data-to="4"></div>
+        </div>
+    </div>
+</section>
+
+        <section id="legal" class="legal-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Legal Information</div>
+                    <h2 class="section-title fade-in">Policies & Guidelines</h2>
+                    <p class="section-subtitle fade-in">
+                        Our commitment to transparency, privacy, and ethical AI development.
+                    </p>
+                </div>
+
+                <div class="nav-tabs">
+                    <button class="tab-btn active" onclick="showLegalTab('privacy')">
+                        <i class="fas fa-shield-alt"></i> Privacy Policy
+                    </button>
+                    <button class="tab-btn" onclick="showLegalTab('terms')">
+                        <i class="fas fa-file-contract"></i> Terms of Service
+                    </button>
+                    <button class="tab-btn" onclick="showLegalTab('cookies')">
+                        <i class="fas fa-cookie-bite"></i> Cookie Policy
+                    </button>
+                    <button class="tab-btn" onclick="showLegalTab('gdpr')">
+                        <i class="fas fa-globe-europe"></i> GDPR Compliance
+                    </button>
+                    <button class="tab-btn" onclick="showLegalTab('ai-ethics')">
+                        <i class="fas fa-brain"></i> AI Ethics
+                    </button>
+                </div>
+
+
+                <div id="privacy" class="content-section active">
+                    <div class="legal-card fade-in">
+                        <h1><i class="fas fa-shield-alt"></i> Privacy Policy</h1>
+                        <p class="date-updated">Last Updated: October 6, 2025</p>
+
+                        <h2><i class="fas fa-info-circle"></i> Introduction</h2>
+                        <p>At AI Future, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your data when you visit our website or use our AI services.</p>
+
+                        <h2><i class="fas fa-database"></i> Information We Collect</h2>
+                        
+                        <h3>Personal Information</h3>
+                        <p>We may collect personal information that you voluntarily provide to us, including:</p>
+                        <ul>
+                            <li>Name and contact information (email address, phone number)</li>
+                            <li>Account credentials and profile information</li>
+                            <li>Communication preferences</li>
+                            <li>Feedback, survey responses, and correspondence</li>
+                        </ul>
+
+                        <h3>Automatically Collected Information</h3>
+                        <ul>
+                            <li>Device information (IP address, browser type, operating system)</li>
+                            <li>Usage data (pages visited, time spent, click patterns)</li>
+                            <li>Cookies and similar tracking technologies</li>
+                            <li>Location data (with your consent)</li>
+                        </ul>
+
+                        <h2><i class="fas fa-cogs"></i> How We Use Your Information</h2>
+                        <p>We use the collected information for various purposes:</p>
+                        <ul>
+                            <li>To provide, maintain, and improve our AI services</li>
+                            <li>To personalize your experience and deliver relevant content</li>
+                            <li>To communicate with you about updates, news, and promotions</li>
+                            <li>To analyze usage patterns and optimize our platform</li>
+                            <li>To detect, prevent, and address technical issues and security threats</li>
+                            <li>To comply with legal obligations and protect our rights</li>
+                        </ul>
+
+                        <div class="highlight">
+                            <strong>AI Training Data:</strong> We may use anonymized and aggregated data from user interactions to improve our AI models. We never use personally identifiable information for AI training without explicit consent.
+                        </div>
+
+                        <div class="contact-info">
+                            <h3><i class="fas fa-envelope"></i> Contact Us</h3>
+                            <p>For privacy-related inquiries, please contact us at:</p>
+                            <p><strong>Email:</strong> privacy@aifuture.com</p>
+                            <p><strong>Address:</strong> AI Innovation Hub, Palo Alto, CA 94304, USA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="terms" class="content-section">
+                    <div class="legal-card fade-in">
+                        <h1><i class="fas fa-file-contract"></i> Terms of Service</h1>
+                        <p class="date-updated">Last Updated: October 6, 2025</p>
+
+                        <h2><i class="fas fa-handshake"></i> Agreement to Terms</h2>
+                        <p>By accessing or using AI Future's services, you agree to be bound by these Terms of Service.</p>
+
+                        <h2><i class="fas fa-check-circle"></i> Acceptable Use</h2>
+                        <p>You agree to use our services only for lawful purposes. You must not violate any applicable laws or regulations.</p>
+
+                        <div class="contact-info">
+                            <h3><i class="fas fa-envelope"></i> Contact Us</h3>
+                            <p><strong>Email:</strong> legal@aifuture.com</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="cookies" class="content-section">
+                    <div class="legal-card fade-in">
+                        <h1><i class="fas fa-cookie-bite"></i> Cookie Policy</h1>
+                        <p class="date-updated">Last Updated: October 6, 2025</p>
+
+                        <h2><i class="fas fa-question-circle"></i> What Are Cookies?</h2>
+                        <p>Cookies are small text files stored on your device when you visit a website.</p>
+
+                        <div class="contact-info">
+                            <h3><i class="fas fa-envelope"></i> Questions About Cookies?</h3>
+                            <p><strong>Email:</strong> privacy@aifuture.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="gdpr" class="content-section">
+                    <div class="legal-card fade-in">
+                        <h1><i class="fas fa-globe-europe"></i> GDPR Compliance</h1>
+                        <p class="date-updated">Last Updated: October 6, 2025</p>
+
+                        <h2><i class="fas fa-info-circle"></i> Our Commitment</h2>
+                        <p>AI Future is committed to complying with the General Data Protection Regulation (GDPR).</p>
+
+                        <div class="contact-info">
+                            <p><strong>Email:</strong> gdpr@aifuture.com</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="ai-ethics" class="content-section">
+                    <div class="legal-card fade-in">
+                        <h1><i class="fas fa-brain"></i> AI Ethics & Principles</h1>
+                        <p class="date-updated">Last Updated: October 6, 2025</p>
+
+                        <h2><i class="fas fa-heart"></i> Our Commitment to Ethical AI</h2>
+                        <p>At AI Future, we believe that artificial intelligence should be developed and deployed responsibly.</p>
+
+                        <div class="contact-info">
+                            <p><strong>Ethics Hotline:</strong> ethics@aifuture.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Connect</div>
+                    <h2 class="section-title fade-in">Get In Touch</h2>
+                    <p class="section-subtitle fade-in">
+                        Ready to leverage AI for your business? Contact us to
+                        explore innovative solutions.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info fade-in">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email Us</h4>
+                                <p>
+                                    <a
+                                        class="contact-link"
+                                        >info@aifuture.com</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Call Us</h4>
+                                <p>
+                                    <a
+                                        class="contact-link"
+                                        >+1 (202) 555-0123</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Visit Us</h4>
+                                <p>
+                                    AI Innovation Hub<br />Palo Alto, CA 94304,
+                                    USA
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a
+                                href="https://twitter.com/aifuture"
+                                class="social-link"
+                                target="_blank"
+                            >
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a
+                                href="https://linkedin.com/company/aifuture"
+                                class="social-link"
+                                target="_blank"
+                            >
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a
+                                href="https://github.com/aifuture"
+                                class="social-link"
+                                target="_blank"
+                            >
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form fade-in">
+                        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="6531bee0-a029-4496-b264-934cb218be2f">
+
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required />
+                                <label for="name">Full Name</label>
+                                <div class="form-highlight"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required />
+                                <label for="email">Email Address</label>
+                                <div class="form-highlight"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" required />
+                                <label for="subject">Subject</label>
+                                <div class="form-highlight"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    required
+                                    rows="4"
+                                ></textarea>
+                                <label for="message">Your Message</label>
+                                <div class="form-highlight"></div>
+                            </div>
+
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>Send Message</span>
+                                <div class="btn-particles"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-bg"></div>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <div class="logo-3d">
+                            <span class="logo-text">AI Future</span>
+                            <div class="logo-particles"></div>
+                        </div>
+                        <p class="footer-description">
+                            Advancing human discovery through artificial
+                            intelligence. We are committed to developing AI
+                            solutions that accelerate innovation and solve
+                            global challenges.
+                        </p>
+                        <div class="footer-social">
+                            <a
+                                href="https://twitter.com/aifuture"
+                                class="social-link"
+                                target="_blank"
+                            >
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a
+                                href="https://linkedin.com/company/aifuture"
+                                class="social-link"
+                                target="_blank"
+                            >
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a
+                                href="https://github.com/aifuture"
+                                class="social-link"
+                                target="_blank"
+                            >
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4>AI Solutions</h4>
+                            <ul>
+                                <li><a href="#about">Machine Learning</a></li>
+                                <li><a href="#about">Neural Networks</a></li>
+                                <li><a href="#about">Computer Vision</a></li>
+                                <li><a href="#about">Natural Language Processing</a></li>
+                                <li><a href="#about">Predictive Analytics</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#showcase">Our Team</a></li>
+                                <li><a href="#contact">Careers</a></li>
+                                <li><a href="#news">Press</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Resources</h4>
+                            <ul>
+                                <li><a href="#showcase">Documentation</a></li>
+                                <li><a href="#chat">API Reference</a></li>
+                                <li><a href="#about">Tutorials</a></li>
+                                <li><a href="#news">Blog</a></li>
+                                <li><a href="#contact">Support</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Legal</h4>
+                            <ul>
+                                <li><a href="#legal" onclick="showLegalTab('privacy')">Privacy Policy</a></li>
+                                <li><a href="#legal" onclick="showLegalTab('terms')">Terms of Service</a></li>
+                                <li><a href="#legal" onclick="showLegalTab('cookies')">Cookie Policy</a></li>
+                                <li><a href="#legal" onclick="showLegalTab('gdpr')">GDPR Compliance</a></li>
+                                <li><a href="#legal" onclick="showLegalTab('ai-ethics')">AI Ethics</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <p>
+                            &copy; 2025 AI Future. All rights reserved.
+                            Advancing human intelligence through AI innovation.
+                        </p>
+                        <div class="footer-bottom-links">
+                            <a href="#legal" onclick="showLegalTab('privacy')">Privacy</a>
+                            <a href="#legal" onclick="showLegalTab('terms')">Terms</a>
+                            <a href="#legal" onclick="showLegalTab('cookies')">Cookies</a>
+                            <a href="#hero">Sitemap</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+        <script>
+
+            function showLegalTab(tabName) {
+
+                const sections = document.querySelectorAll('.content-section');
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                });
+
+ 
+                const buttons = document.querySelectorAll('.tab-btn');
+                buttons.forEach(btn => {
+                    btn.classList.remove('active');
+                });
+
+                const targetSection = document.getElementById(tabName);
+                if (targetSection) {
+                    targetSection.classList.add('active');
+                }
+
+      
+                const activeBtn = Array.from(buttons).find(btn => 
+                    btn.textContent.toLowerCase().includes(tabName.replace('-', ' '))
+                );
+                if (activeBtn) {
+                    activeBtn.classList.add('active');
+                }
+
+    
+                const legalSection = document.getElementById('legal');
+                if (legalSection) {
+                    const navbarHeight = document.getElementById('navbar').offsetHeight;
+                    const targetPosition = legalSection.offsetTop - navbarHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth',
+                    });
+                }
+            }
+        </script>
+
+    </body>
+</html>
