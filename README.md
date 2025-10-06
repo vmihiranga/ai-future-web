@@ -1,6 +1,5 @@
 # ai-future-web
 
-```markdown
 # 🧠 AI Future Web: Bridging Tomorrow's Tech Today
 
 A dynamic web platform exploring the cutting edge of Artificial Intelligence, built with modern web technologies to showcase future possibilities.
@@ -54,16 +53,7 @@ Ensure you have Node.js and npm (Node Package Manager) installed.
     npm install
     ```
 
-3.  **Environment Configuration (Optional but Recommended):**
-    If your project requires environment variables (e.g., API keys, port numbers), create a `.env` file in the root directory.
-
-    ```dotenv
-    # Example .env content
-    PORT=3000
-    API_KEY_EXTERNAL_SERVICE=your_api_key_here
-    ```
-
-4.  **Start the Server:**
+3.  **Start the Server:**
     Once dependencies are installed and configuration is set, you can start the server.
 
     ```bash
@@ -134,13 +124,6 @@ We welcome contributions to `ai-future-web`! To ensure a smooth collaboration, p
 *   Adhere to standard JavaScript/HTML/CSS best practices.
 *   Use a linter (e.g., ESLint) and formatter (e.g., Prettier) to maintain consistent code style. Configuration files will be provided in the repository.
 
-### Branch Naming
-
-*   Use descriptive branch names:
-    *   `feature/your-feature-name` for new features.
-    *   `bugfix/issue-description` for bug fixes.
-    *   `refactor/area-of-refactor` for code improvements.
-
 ### Pull Request Process
 
 1.  Fork the repository and create your branch from `main`.
@@ -156,12 +139,4 @@ We welcome contributions to `ai-future-web`! To ensure a smooth collaboration, p
 *   Ensure all existing tests pass before submitting a PR.
 
 
-## 📜 License Information
 
-This project is currently released without a specific license.
-
-*   **License:** None
-*   **Copyright:** © 2023 vmihiranga. All rights reserved.
-
-Without a formal license, the default copyright law applies, meaning you do not have permission to use, distribute, or modify this software without explicit permission from the copyright holder.
-```
