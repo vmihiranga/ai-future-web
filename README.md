@@ -59,7 +59,7 @@ Ensure you have Node.js and npm (Node Package Manager) installed.
     ```bash
     npm start
     ```
-    The server should now be running, typically on `http://localhost:3000` (or the port specified in your `.env` file).
+    The server should now be running, typically on `http://localhost:3000` 
 
 
 ## 🚀 Usage Examples
@@ -76,7 +76,8 @@ http://localhost:3000
 
 You should see the `ai-future-web` interface, which might present various AI-powered features or information.
 
-![Usage Screenshot Example](/preview_example.png)
+![Usage Screenshot Example](https://i.ibb.co/FkC82Cds/image.png)
+)
 *A placeholder screenshot showing the main application interface.*
 
 ### Interacting with the API (Example)
