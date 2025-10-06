@@ -12,7 +12,7 @@ A dynamic web platform exploring the cutting edge of Artificial Intelligence, bu
 [![Primary Language](https://img.shields.io/badge/language-HTML%2FCSS%2FJS-orange)](https://github.com/vmihiranga/ai-future-web)
 
 <!-- Preview Image -->
-![Project Preview Image](/preview_example.png)
+![Project Preview Image](/https://i.ibb.co/FkC82Cds/image.png)
 
 
 ## ✨ Features
