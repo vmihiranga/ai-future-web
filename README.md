@@ -16,7 +16,7 @@ A dynamic web platform exploring the cutting edge of Artificial Intelligence, bu
 
 ## ✨ Features
 
-`ai-future-web` is designed to be a robust and interactive platform, offering a glimpse into the future of AI integration with web applications.
+`AI-FUTURE` is designed to be a robust and interactive platform, offering a glimpse into the future of AI integration with web applications.
 
 *   🚀 **High-Performance Backend:** Built with Express.js to provide a fast and scalable server for AI-driven content.
 *   🛡️ **Secure API Endpoints:** Implements `express-rate-limit` to protect against abuse and ensure stable service delivery.
@@ -27,7 +27,7 @@ A dynamic web platform exploring the cutting edge of Artificial Intelligence, bu
 
 ## ⚙️ Installation Guide
 
-Follow these steps to get `ai-future-web` up and running on your local machine.
+Follow these steps to get `AI-FUTURE` up and running on your local machine.
 
 ### Prerequisites
 
@@ -41,8 +41,8 @@ Ensure you have Node.js and npm (Node Package Manager) installed.
     Start by cloning the project repository to your local machine using Git.
 
     ```bash
-    git clone https://github.com/vmihiranga/ai-future-web.git
-    cd ai-future-web
+    git clone https://github.com/vmihiranga/AI-FUTURE.git
+    cd AI-FUTURE
     ```
 
 2.  **Install Dependencies:**
@@ -73,7 +73,7 @@ Open your web browser and navigate to:
 http://localhost:3000
 ```
 
-You should see the `ai-future-web` interface, which might present various AI-powered features or information.
+You should see the `AI-FUTURE` interface, which might present various AI-powered features or information.
 
 ![Usage Screenshot Example](https://i.ibb.co/FkC82Cds/image.png)
 )
@@ -102,7 +102,7 @@ Refer to the `server.js` file and any accompanying API documentation for specifi
 
 ## 🛣️ Project Roadmap
 
-The `ai-future-web` project is continuously evolving. Here's a glimpse of what's planned:
+The `AI-FUTURE` project is continuously evolving. Here's a glimpse of what's planned:
 
 *   **Version 1.1.0 - Enhanced AI Integration:**
     *   Implement advanced AI model integration (e.g., specific LLMs or image generation APIs).
@@ -117,7 +117,7 @@ The `ai-future-web` project is continuously evolving. Here's a glimpse of what's
 
 ## 🤝 Contribution Guidelines
 
-We welcome contributions to `ai-future-web`! To ensure a smooth collaboration, please follow these guidelines:
+We welcome contributions to `AI-FUTURE`! To ensure a smooth collaboration, please follow these guidelines:
 
 ### Code Style
 
@@ -133,10 +133,7 @@ We welcome contributions to `ai-future-web`! To ensure a smooth collaboration, p
 5.  Provide a detailed description of your changes in the PR.
 6.  Address any feedback from reviewers.
 
-### Testing
 
-*   If applicable, include unit or integration tests for new features or bug fixes.
-*   Ensure all existing tests pass before submitting a PR.
 
 
 
