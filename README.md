@@ -1,4 +1,3 @@
-# ai-future-web
 
 # 🧠 AI Future Web: Bridging Tomorrow's Tech Today
 
